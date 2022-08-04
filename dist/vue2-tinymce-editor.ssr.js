@@ -94,7 +94,9 @@ var script = {
     this.init();
   },
   beforeDestroy: function beforeDestroy() {
-    this.editor.destroy();
+    if (this.editor) {
+      this.editor.destroy();
+    }
   },
   watch: {
     value: function value(newValue) {
@@ -246,7 +248,7 @@ var __vue_render__ = function __vue_render__() {
   }, [_vm._ssrNode("<textarea" + _vm._ssrAttr("id", _vm.inputId) + _vm._ssrStyle(null, {
     'height': _vm.height + 'px',
     'width': _vm.width <= 0 ? 'auto' : _vm.width + 'px'
-  }, null) + " data-v-59c7718a>" + _vm._ssrEscape(_vm._s(_vm.content)) + "</textarea>")]);
+  }, null) + " data-v-3eb0905e>" + _vm._ssrEscape(_vm._s(_vm.content)) + "</textarea>")]);
 };
 
 var __vue_staticRenderFns__ = [];
@@ -255,10 +257,10 @@ var __vue_staticRenderFns__ = [];
 var __vue_inject_styles__ = undefined;
 /* scoped */
 
-var __vue_scope_id__ = "data-v-59c7718a";
+var __vue_scope_id__ = "data-v-3eb0905e";
 /* module identifier */
 
-var __vue_module_identifier__ = "data-v-59c7718a";
+var __vue_module_identifier__ = "data-v-3eb0905e";
 /* functional template */
 
 var __vue_is_functional_template__ = false;

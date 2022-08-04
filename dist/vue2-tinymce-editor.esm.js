@@ -91,7 +91,9 @@ var script = {
   },
 
   beforeDestroy() {
-    this.editor.destroy();
+    if (this.editor) {
+      this.editor.destroy();
+    }
   },
 
   watch: {
@@ -278,7 +280,7 @@ var __vue_staticRenderFns__ = [];
 const __vue_inject_styles__ = undefined;
 /* scoped */
 
-const __vue_scope_id__ = "data-v-59c7718a";
+const __vue_scope_id__ = "data-v-3eb0905e";
 /* module identifier */
 
 const __vue_module_identifier__ = undefined;

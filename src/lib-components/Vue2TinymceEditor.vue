@@ -105,7 +105,9 @@
             this.init()
         },
         beforeDestroy() {
-            this.editor.destroy()
+          if (this.editor) {
+            this.editor.destroy();
+          }
         },
         watch: {
             value: function (newValue) {
